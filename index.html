@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a50f78a1e0.js" crossorigin="anonymous"></script>
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -21,7 +22,7 @@
 <body class="font-lato">
     <header class="container mx-auto my-5">
         <!-- navbar section -->
-        <nav class="lg:text-white">
+        <nav class="text-white">
             <div class=" bg-[#F85559] border-none rounded-full flex justify-around  items-center px-2">
                 <div class="">
                     <div class="dropdown">
@@ -32,7 +33,7 @@
                                     d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="bg-[#F85559] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -60,7 +61,7 @@
             </div>
         </nav>
         <!-- banner section -->
-        <section class="">
+        <section class="relative">
             <div class="carousel container mx-auto my-5  mb-10 relative">
                 <div id="slide1" class="carousel-item relative container mx-auto ">
                     <div class="hero " style="background-image: url('./images/banner1.png');">
@@ -129,8 +130,8 @@
 
 
             </div>
-            <div
-                class="hidden lg:block flex-row gap-5 w-4/6 mx-auto bg-white shadow-lg absolute top-80 left-40 mb-10 text-center p-5 hidden lg:block">
+            <!-- <div
+                class="flex justify-center gap-5 w-4/6 mx-auto bg-white shadow-lg absolute mt-15 ml-30 mb-10 text-center p-5 ">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <h4>Strawberry</h4>
@@ -151,22 +152,23 @@
                     <img src="./images/fruit5.png" alt="">
                     <h4>Pomegranate</h4>
                 </div>
-            </div>
+            </div> -->
 
         </section>
     </header>
     <main>
         <!-- deal the day -->
-        <section class="container mx-auto my-5">
+        <section class="container mx-auto my-5 mt-10 text-center lg:text-left">
             <div class="flex flex-col gap-10 lg:flex-row justify-around mb-5">
                 <div class="flex-1">
-                    <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-                    <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots
+                    <h2 class="text-5xl font-extrabold mb-5">Deal of the day</h2>
+                    <p class="text-base font-medium mb-5">Contrary to popular belief, is not simply random text. It has
+                        roots
                         in a piece of classical <br> Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="">
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div>
+                    <div class="grid grid-flow-col gap-5 justify-center auto-cols-max">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
@@ -174,19 +176,22 @@
                             days
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span
+                                class="countdown font-mono text-5xl before:content-[':'] before:inline-block before:mr-2">
                                 <span style="--value:10;"></span>
                             </span>
                             hours
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span
+                                class="countdown font-mono text-5xl before:content-[':'] before:inline-block before:mr-2">
                                 <span style="--value:24;"></span>
                             </span>
                             min
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span
+                                class="countdown font-mono text-5xl before:content-[':'] before:inline-block before:mr-2">
                                 <span style="--value:51;"></span>
                             </span>
                             sec
@@ -459,7 +464,7 @@
         </section>
 
         <!-- meet the team section -->
-        <section class="container mx-auto my-5 text-white">
+        <section class="container mx-auto my-5 text-white mt-10">
             <div class="" style="background-image: url('./images/team.png');">
                 <div class="hero-overlay bg-opacity-60">
                     <div class="text-center p-10">
@@ -470,7 +475,7 @@
                                 roots in a piece of classical
                                 Latin literature from 45 BC, making it over 2000 years old.</p>
                         </div>
-                        <div class=" flex flex-col  justify-between lg:flex-row mt-10 p-10">
+                        <div class=" flex flex-col lg:flex-row items-center  justify-between  mt-10 p-10">
                             <!-- member 1 -->
                             <div>
                                 <img src="./images/member1.png" alt="">
@@ -581,6 +586,146 @@
                 </div>
             </div>
         </section>
+
+        <!-- why choose us -->
+        <section class="container mx-auto mt-10 my-5">
+            <div class="w-4/6 mx-auto text-center ">
+                <h2 class="text-5xl font-extrabold mb-5">Why Choose Us</h2>
+                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in
+                    a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-8 content-center">
+                <div class="order-2 lg:order-1">
+                    <div class="flex justify-center gap-4 mb-5 ">
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-solid fa-users text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                            <hr class="text-black w-20">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mb-5">
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-regular fa-heart text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold">Fresh is Best</h2>
+                            <hr class="text-black w-20">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mb-5">
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-solid fa-gift text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold">Gift Certificates</h2>
+                            <hr class="text-black w-20">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <img src="./images/whychoose1.png" alt="">
+                </div>
+
+                <div class="order-3">
+                    <div class="flex justify-center gap-4 mb-5">
+
+                        <div class="text-right relative">
+                            <h2 class="text-2xl font-extrabold">Integrated Supplier</h2>
+                            <hr class="text-black w-20 text-right absolute right-0">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-solid fa-apple-whole text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mb-5">
+
+                        <div class="text-right relative">
+                            <h2 class="text-2xl font-extrabold">Sustainable Practice</h2>
+                            <hr class="text-black w-20 absolute right-0">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-regular fa-ice-cream text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mb-5">
+
+                        <div class="text-right relative">
+                            <h2 class="text-2xl font-extrabold">The Benefits Only</h2>
+                            <hr class="text-black w-20 absolute right-0">
+                            <p class="text-base font-medium">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
+                                <foreignObject x="15" y="15" width="30" height="30">
+                                    <i class="fa-regular fa-thumbs-up text-white text-2xl"></i>
+                                </foreignObject>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer class=" p-10 bg-black text-white">
@@ -590,7 +735,7 @@
 
         </div>
         <div>
-            <ul class="flex justify-center gap-16">
+            <ul class="grid grid-cols-3 lg:flex justify-center lg:gap-16">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
@@ -600,7 +745,7 @@
             </ul>
         </div>
 
-        <div class="flex justify-center gap-4 pt-5">
+        <div class="grid grid-cols-3 lg:flex justify-center gap-4 pt-5 px-10">
             <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                     <path
                         d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
@@ -616,6 +761,12 @@
                         d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
                     </path>
                 </svg></a>
+            <a><i class="fa-brands fa-linkedin text-white w-6 h-6"></i></a>
+            <a><i class="fa-brands fa-instagram text-white w-6 h-6"></i></a>
+            <a><i class="fa-brands fa-apple text-white w-6 h-6"></i></a>
+
+
+
         </div>
     </footer>
 </body>
